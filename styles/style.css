@@ -1,0 +1,151 @@
+/* Fuente Press Star 2p */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000; /* fondo negro general */
+  color: #fff; /* texto blanco */
+  margin: 0;
+}
+
+h1 {
+    /* propiedad: valor */
+    color: green;
+    font-size: 56px;
+}
+
+p {
+    color: blue;
+    font-size: 24px;
+}
+
+.footer-p {
+    font-size: 12px;
+}
+
+.p-italico {
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+}
+
+.li-nav {
+    list-style-type: none;
+}
+.a-nav {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+  width: 150px;   /* ancho del logo */
+  height: auto;   /* mantiene proporción */
+  display: block;
+}
+
+/* Header general */
+header {
+  background-color: #000;     /* fondo negro para resaltar el logo */
+  padding: 10px 20px;
+  overflow: hidden;           /* limpia los floats */
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ítems del menú en línea */
+nav li {
+  display: inline-block;      /* coloca los enlaces en línea */
+  margin-right: 15px;
+}
+
+/* Enlaces del menú */
+.a-nav {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.a-nav:hover {
+  color: #0f0; /* verde neón al pasar el mouse */
+}
+
+/* ----- Inicio ----- */
+/* Estructura de dos columnas */
+.layout {
+  background-color: #000;
+  color: #0f0;
+  padding: 20px;
+  overflow: hidden; /* limpia los floats */
+}
+
+/* Bloque izquierdo */
+.col-izquierda {
+  float: left;
+  width: 60%;
+  margin-right: 4%;
+}
+
+/* Bloque derecho */
+.col-derecha {
+  float: left;
+  width: 36%;
+}
+
+/* Imágenes dentro del aside */
+.col-derecha img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #0f0;
+}
+
+/* Mobile: apilar bloques */
+@media (max-width: 768px) {
+  .col-izquierda,
+  .col-derecha {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* Formulario */
+.form-contacto label {
+  color: #0f0;
+  font-weight: bold;
+}
+
+.form-contacto input[type="text"],
+.form-contacto input[type="email"],
+.form-contacto textarea {
+  width: 100%;
+  background-color: #000;
+  color: #0f0;
+  border: 2px solid #0f0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.form-contacto input[type="submit"] {
+  background-color: #0f0;
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-contacto input[type="submit"]:hover {
+  background-color: #000;
+  color: #0f0;
+  border: 2px solid #0f0;
+}
+/* NO ESTILAR CON ID, QUEDA RESERVADO PARA JAVASCRIPT */
+/* #p-unico {
+    color: red;
+} */
